@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BreadApp">
+    <children>
+        <AnchorPane layoutY="124.0" prefHeight="476.0" prefWidth="900.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <Label layoutX="468.0" layoutY="239.0" text="bread Aksay classic">
+               <font>
+                  <Font name="Cooper Black" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="95.0" fitWidth="95.0" layoutX="67.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/bread1.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="79.0" fitWidth="95.0" layoutX="295.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/bread2.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="79.0" fitWidth="86.0" layoutX="503.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/bread3.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="79.0" fitWidth="79.0" layoutX="75.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/bread4.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="79.0" fitWidth="79.0" layoutX="295.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/bread5.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="87.0" fitWidth="79.0" layoutX="503.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/bread16.jpeg" />
+               </image>
+            </ImageView>
+            <Button fx:id="backButton" layoutX="750.0" layoutY="396.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="95.0" style="-fx-background-color: #f39c63;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="Forte" size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="moneyLable" alignment="CENTER" layoutX="775.0" layoutY="14.0" opacity="0.76" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: #534a4a; -fx-background-radius: 6;" text="money" textAlignment="CENTER" textFill="WHITE" underline="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="283.0" layoutY="41.0" prefHeight="22.0" prefWidth="102.0" text="Medeu bread">
+               <font>
+                  <Font name="Cooper Black" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="253.0" layoutY="79.0" text="180 tg">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="67.0" layoutY="239.0" text="bread Wallis">
+               <font>
+                  <Font name="Cooper Black" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="271.0" text="210 tg">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="301.0" layoutY="239.0" text="baguette">
+               <font>
+                  <Font name="Cooper Black" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="253.0" layoutY="271.0" text="145 tg">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="471.0" layoutY="42.0" text="bread Aksay black">
+               <font>
+                  <Font name="Cooper Black" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="454.0" layoutY="79.0" prefHeight="14.0" prefWidth="34.0" text="180 tg">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="42.0" text="Bread for sandwiches">
+               <font>
+                  <Font name="Cooper Black" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="79.0" text="220 tg">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="454.0" layoutY="271.0" text="130 tg">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="bread1BuyButton" layoutX="166.0" layoutY="80.0" mnemonicParsing="false" text="Buy" />
+            <Button fx:id="bread2BuyButton" layoutX="385.0" layoutY="80.0" mnemonicParsing="false" text="Buy" />
+            <Button fx:id="bread3BuyButton" layoutX="595.0" layoutY="80.0" mnemonicParsing="false" text="Buy" />
+            <Button fx:id="bread4BuyButton" layoutX="166.0" layoutY="272.0" mnemonicParsing="false" text="Buy" />
+            <Button fx:id="bread5BuyButton" layoutX="385.0" layoutY="272.0" mnemonicParsing="false" text="Buy" />
+            <Button fx:id="bread6BuyButton" layoutX="595.0" layoutY="272.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="36.0" text="Buy" />
+            <Label fx:id="listLabel" alignment="TOP_LEFT" contentDisplay="TOP" disable="true" layoutX="659.0" layoutY="76.0" prefHeight="300.0" prefWidth="226.0" text="basket" underline="true" wrapText="true" />
+            <TextField fx:id="bread1Text" layoutX="59.0" layoutY="171.0" prefHeight="26.0" prefWidth="110.0" promptText="how many Bread?" />
+            <TextField fx:id="bread2Text" layoutX="268.0" layoutY="171.0" promptText="how many Bread?" />
+            <TextField fx:id="bread3Text" layoutX="468.0" layoutY="171.0" promptText="how many Bread?" />
+            <TextField fx:id="bread4Text" layoutX="40.0" layoutY="346.0" promptText="how many Bread?" />
+            <TextField fx:id="bread5Text" layoutX="268.0" layoutY="346.0" promptText="how many Bread?" />
+            <TextField fx:id="bread6Text" layoutX="468.0" layoutY="346.0" promptText="how many Bread?" />
+         </children>
+        </AnchorPane>
+        <Label layoutX="304.0" layoutY="14.0" prefHeight="105.0" prefWidth="225.0" text="Foodie" textFill="WHITE">
+            <font>
+                <Font name="Forte" size="74.0" />
+            </font>
+        </Label>
+      <ImageView fitHeight="95.0" fitWidth="99.0" layoutX="530.0" layoutY="19.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/bread.jpeg" />
+         </image>
+         <effect>
+            <DropShadow color="#07194c" />
+         </effect>
+      </ImageView>
+    </children>
+</AnchorPane>
