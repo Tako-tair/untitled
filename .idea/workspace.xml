@@ -119,8 +119,8 @@
       <recent name="C:\Users\tako0\IdeaProjects\untitled7\src\sample\image" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\tako0\IdeaProjects\untitled7\src" />
       <recent name="C:\Users\tako0\IdeaProjects\untitled7\.idea" />
+      <recent name="C:\Users\tako0\IdeaProjects\untitled7\src" />
       <recent name="C:\Users\tako0\IdeaProjects\untitled7" />
       <recent name="C:\Users\tako0\IdeaProjects\untitled7\src\sample\image" />
     </key>
@@ -248,7 +248,7 @@
       <workItem from="1588827032503" duration="19641000" />
       <workItem from="1588919089435" duration="20741000" />
       <workItem from="1588949280064" duration="2165000" />
-      <workItem from="1588954707434" duration="3966000" />
+      <workItem from="1588954707434" duration="4256000" />
     </task>
     <task id="LOCAL-00001" summary="commit 1">
       <created>1588955038421</created>
@@ -271,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588959088053</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit 1">
+      <created>1588959204389</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588959204389</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,10 +323,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="162" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824@0.0.1536.824" timestamp="1588831565624" />
-    <state x="565" y="10" key="CommitChangelistDialog2" timestamp="1588959192562">
+    <state x="565" y="10" key="CommitChangelistDialog2" timestamp="1588959204053">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="565" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1588959192562" />
+    <state x="565" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1588959204053" />
     <state x="473" y="157" key="FileChooserDialogImpl" timestamp="1588949386788">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -368,10 +375,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="1002" y="336" key="VCS.ChangelistChooser/0.0.1536.824@0.0.1536.824" timestamp="1588959159338" />
-    <state x="722" y="151" key="Vcs.Push.Dialog.v2" timestamp="1588959090959">
+    <state x="722" y="151" key="Vcs.Push.Dialog.v2" timestamp="1588959208297">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="722" y="151" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1588959090959" />
+    <state x="722" y="151" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1588959208297" />
     <state x="477" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1588949280220">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
