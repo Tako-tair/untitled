@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitIgnore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="commit 1">
+      <change afterPath="$PROJECT_DIR$/Dump20200508/foodie_users.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dump20200508/orderes_clients.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dump20200508/sakila_actor.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dump20200508/sakila_address.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dump20200508/sakila_category.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dump20200508/sakila_city.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dump20200508/sakila_country.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dump20200508/sakila_customer.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dump20200508/sakila_film.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dump20200508/sakila_film_actor.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dump20200508/sakila_film_category.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dump20200508/sakila_film_text.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dump20200508/sakila_inventory.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dump20200508/sakila_language.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dump20200508/sakila_payment.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dump20200508/sakila_rental.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dump20200508/sakila_routines.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dump20200508/sakila_staff.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dump20200508/sakila_store.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dump20200508/sys_routines.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dump20200508/sys_sys_config.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dump20200508/world_city.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dump20200508/world_country.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dump20200508/world_countrylanguage.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,12 +136,14 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tako0\IdeaProjects\untitled7\src\sample\image" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tako0\IdeaProjects\untitled7" />
       <recent name="C:\Users\tako0\IdeaProjects\untitled7\src\sample\image" />
     </key>
   </component>
@@ -246,8 +270,16 @@
       <workItem from="1588827032503" duration="19641000" />
       <workItem from="1588919089435" duration="20741000" />
       <workItem from="1588949280064" duration="2165000" />
-      <workItem from="1588954707434" duration="297000" />
+      <workItem from="1588954707434" duration="3436000" />
     </task>
+    <task id="LOCAL-00001" summary="commit 1">
+      <created>1588955038421</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588955038421</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +288,8 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <MESSAGE value="commit 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="74" key="#SQL_Dialects" timestamp="1587913960099">
@@ -266,10 +300,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="170" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1588699508367" />
-    <state x="219" y="294" width="814" height="509" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588928745423">
+    <state x="370" y="190" width="814" height="509" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588957532266">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="219" y="294" width="814" height="509" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1588928745423" />
+    <state x="370" y="190" width="814" height="509" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1588957532266" />
     <state x="536" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587236030023">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -290,6 +324,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="162" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824@0.0.1536.824" timestamp="1588831565624" />
+    <state x="565" y="10" key="CommitChangelistDialog2" timestamp="1588958604679">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="565" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1588958604679" />
     <state x="473" y="157" key="FileChooserDialogImpl" timestamp="1588949386788">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -326,10 +364,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="2" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1588877610645" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1588937906900">
+    <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1588957549819">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588937906900" />
+    <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1588957549819" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1588956872287">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588956872287" />
+    <state x="1002" y="336" key="VCS.ChangelistChooser" timestamp="1588955084861">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="1002" y="336" key="VCS.ChangelistChooser/0.0.1536.824@0.0.1536.824" timestamp="1588955084861" />
+    <state x="722" y="151" key="Vcs.Push.Dialog.v2" timestamp="1588955040308">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="722" y="151" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1588955040308" />
     <state x="477" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1588949280220">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
