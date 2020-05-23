@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MilkApp">
+    <children>
+        <AnchorPane layoutY="124.0" prefHeight="476.0" prefWidth="900.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <Label layoutX="81.0" layoutY="219.0" text="Yogurt">
+                    <font>
+                        <Font name="Cooper Black" size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="506.0" layoutY="219.0" text="Ice cream">
+                    <font>
+                        <Font name="Cooper Black" size="15.0" />
+                    </font>
+                </Label>
+                <Button layoutX="750.0" layoutY="396.0" mnemonicParsing="false" onAction="#backButton" prefHeight="38.0" prefWidth="95.0" style="-fx-background-color: #f39c63;" text="Back" textFill="WHITE">
+                    <font>
+                        <Font name="Forte" size="20.0" />
+                    </font>
+                </Button>
+                <Label fx:id="moneyLable" alignment="CENTER" layoutX="775.0" layoutY="14.0" opacity="0.76" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: #534a4a; -fx-background-radius: 6;" text="money" textAlignment="CENTER" textFill="WHITE" underline="true">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="310.0" layoutY="40.0" prefHeight="22.0" prefWidth="42.0" text="Curd">
+                    <font>
+                        <Font name="Cooper Black" size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="253.0" layoutY="79.0" text="700 tg">
+                    <font>
+                        <Font name="Franklin Gothic Medium Cond" size="12.0" />
+                    </font>
+                </Label>
+                <Label layoutX="25.0" layoutY="271.0" text="100 tg">
+                    <font>
+                        <Font name="Franklin Gothic Medium Cond" size="12.0" />
+                    </font>
+                </Label>
+                <Label layoutX="305.0" layoutY="219.0" text="Cheese">
+                    <font>
+                        <Font name="Cooper Black" size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="253.0" layoutY="271.0" text="1500 tg">
+                    <font>
+                        <Font name="Franklin Gothic Medium Cond" size="12.0" />
+                    </font>
+                </Label>
+                <Label layoutX="498.0" layoutY="42.0" text="Sour cream">
+                    <font>
+                        <Font name="Cooper Black" size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="451.0" layoutY="79.0" prefHeight="14.0" prefWidth="42.0" text="250 tg">
+                    <font>
+                        <Font name="Franklin Gothic Medium" size="12.0" />
+                    </font>
+                </Label>
+                <Label layoutX="96.0" layoutY="41.0" text="Milk">
+                    <font>
+                        <Font name="Cooper Black" size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="23.0" layoutY="79.0" text="200 tg">
+                    <font>
+                        <Font name="Franklin Gothic Medium" size="12.0" />
+                    </font>
+                </Label>
+                <Label layoutX="454.0" layoutY="271.0" text="250 tg">
+                    <font>
+                        <Font name="Franklin Gothic Medium" size="12.0" />
+                    </font>
+                </Label>
+                <Button fx:id="milkButton" layoutX="166.0" layoutY="80.0" mnemonicParsing="false" text="Buy" />
+                <Button fx:id="curdButton" layoutX="385.0" layoutY="80.0" mnemonicParsing="false" text="Buy" />
+                <Button fx:id="sourButton" layoutX="595.0" layoutY="80.0" mnemonicParsing="false" text="Buy" />
+                <Button fx:id="yogurtButton" layoutX="166.0" layoutY="272.0" mnemonicParsing="false" text="Buy" />
+                <Button fx:id="cheeseButton" layoutX="385.0" layoutY="272.0" mnemonicParsing="false" text="Buy" />
+                <Button fx:id="iceButton" layoutX="595.0" layoutY="272.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="36.0" text="Buy" />
+                <Label fx:id="listLabel" alignment="TOP_LEFT" contentDisplay="TOP" disable="true" layoutX="659.0" layoutY="76.0" prefHeight="300.0" prefWidth="226.0" text="basket" underline="true" wrapText="true" />
+                <TextField fx:id="curdText" layoutX="268.0" layoutY="171.0" promptText="how many kilograms?" />
+                <TextField fx:id="sourText" layoutX="468.0" layoutY="171.0" promptText="how many kilograms?" />
+                <TextField fx:id="uogurtText" layoutX="40.0" layoutY="346.0" promptText="how many?" />
+                <TextField fx:id="cheeseText" layoutX="268.0" layoutY="346.0" promptText="how many kilograms?" />
+                <TextField fx:id="iceText" layoutX="468.0" layoutY="346.0" promptText="how many?" />
+                <TextField fx:id="milkText" layoutX="59.0" layoutY="171.0" prefHeight="26.0" prefWidth="110.0" promptText="how many liter?" />
+            <ImageView fitHeight="88.0" fitWidth="102.0" layoutX="65.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/WhatsApp%20Image%202020-05-22%20at%2001.59.32.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="88.0" fitWidth="102.0" layoutX="65.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/WhatsApp%20Image%202020-05-22%20at%2001.59.32%20(3).jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="88.0" fitWidth="102.0" layoutX="287.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/WhatsApp%20Image%202020-05-22%20at%2001.59.32%20(4).jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="88.0" fitWidth="102.0" layoutX="287.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/WhatsApp%20Image%202020-05-22%20at%2001.59.32%20(2).jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="88.0" fitWidth="102.0" layoutX="498.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/WhatsApp%20Image%202020-05-22%20at%2001.59.32%20(5).jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="88.0" fitWidth="102.0" layoutX="492.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/WhatsApp%20Image%202020-05-22%20at%2001.59.32%20(1).jpeg" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+        <Label layoutX="304.0" layoutY="14.0" prefHeight="105.0" prefWidth="225.0" text="Foodie" textFill="WHITE">
+            <font>
+                <Font name="Forte" size="74.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="95.0" fitWidth="99.0" layoutX="530.0" layoutY="19.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@image/bread.jpeg" />
+            </image>
+            <effect>
+                <DropShadow color="#07194c" />
+            </effect>
+        </ImageView>
+    </children>
+</AnchorPane>
