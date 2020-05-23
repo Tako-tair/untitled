@@ -24,7 +24,7 @@
                   <Image url="@image/staySafe.jpeg" />
                </image>
             </ImageView>
-            <Button fx:id="koronaBackButton" layoutX="159.0" layoutY="386.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: #f39c63;" text="Back" textFill="WHITE">
+            <Button layoutX="159.0" layoutY="386.0" mnemonicParsing="false" onAction="#koronaBackButton" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: #f39c63;" text="Back" textFill="WHITE">
                <font>
                   <Font name="Forte" size="20.0" />
                </font>

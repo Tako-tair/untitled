@@ -5,50 +5,12 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import server.Server;
 
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.net.Socket;
-import java.util.ArrayList;
-
+import java.awt.event.ActionListener;
+import java.io.IOException;
 
 public class Main extends Application {
-
-    public static void connect(PackageData pd) {
-        String s = "";
-        try{
-            Socket socket = new Socket("127.0.0.1", 3306);
-            ObjectOutputStream outputStream = new ObjectOutputStream(socket.getOutputStream());
-            ObjectInputStream inputStream = new ObjectInputStream(socket.getInputStream());
-
-            if(pd.getOperationType().equals("ADD")){
-                outputStream.writeObject(pd);
-            }
-            else if(pd.getOperationType().equals("LIST")){
-                outputStream.writeObject(pd);
-                PackageData infoFromServer = (PackageData)inputStream.readObject();
-                ArrayList<Order> arrayListFromServer = infoFromServer.getOrders();
-                 s = "";
-
-                for(int i=0;i<arrayListFromServer.size();i++){
-                    s+=arrayListFromServer.get(i)+"\n";
-                }
-            }
-
-            MenuList menuList = new MenuList();
-            menuList.listText.setText(s);
-
-
-            inputStream.close();
-            outputStream.close();
-            socket.close();
-
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-    }
-
-
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
@@ -57,8 +19,33 @@ public class Main extends Application {
         primaryStage.show();
     }
 
+    public static void main(String[] args) throws IOException {
+       Abstract2 abstract2 = new Abstract2("Tair","Ospanov");
+        Abstract all[] = {abstract2};
+        for (int i = 0; i < all.length; i++) {
+            all[i].getInfo();
+            all[i].getInfo2();
+        }
 
-    public static void main(String[] args) {
+        CalculatorSale calculatorSale = new CalculatorSale();
+        calculatorSale.info();
+        calculatorSale.all();
+        calculatorSale.info2();
+
+        FThread f= new FThread();
+        f.start();
         launch(args);
+
+    }
+
+    public static class FThread extends Thread{
+        @Override
+        public void run() {
+            try {
+                Server s = new Server();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }

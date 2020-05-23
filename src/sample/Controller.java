@@ -1,5 +1,6 @@
 package sample;
 
+import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.ResultSet;
@@ -37,7 +38,28 @@ public class Controller {
     private Button loginUpButton;
 
     @FXML
+    void loginUpButton(javafx.event.ActionEvent actionEvent) throws IOException {
+        Parent SignIn = FXMLLoader.load(getClass().getResource("singUp.fxml"));
+        Scene scene2 = new Scene(SignIn);
+        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene2);
+        window.show();
+    }
+
+    @FXML
+    void singInButton(javafx.event.ActionEvent actionEvent) throws IOException {
+        Parent SignIn = FXMLLoader.load(getClass().getResource("app1.fxml"));
+        Scene scene2 = new Scene(SignIn);
+        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene2);
+        window.show();
+    }
+
+    @FXML
     void initialize() {
+        loginUpButton.setOnAction(actionEvent -> {
+            openNewScene("singUp.fxml");
+        });
         singInButton.setOnAction(actionEvent -> {
             String loginText = loginField.getText().trim();
             String loginPassText = passwordField.getText().trim();
@@ -52,12 +74,6 @@ public class Controller {
             else{
                 System.err.println("Login and Password is empty");
             }
-
-        });
-
-
-        loginUpButton.setOnAction(actionEvent -> {
-           openNewScene("/sample/singUp.fxml");
         });
 
     }
@@ -68,18 +84,8 @@ public class Controller {
            user.setLogin(loginText);
            user.setPassword(loginPassText);
            ResultSet resultSet = dbHandler.getUser(user);
-
-           int count = 0;
-           try {
-            while (resultSet.next()) {
-                count++;
-            }
-        }catch(SQLException e){
-               e.printStackTrace();
-           }
-            if (count >= 1) {
+            if (user.getLogin()== loginText && user.getPassword()==loginPassText) {
                 openNewScene("/sample/app1.fxml");
-
             } else{
                Shake userLogAnime = new Shake( loginField);
                Shake userPasAnime = new Shake(passwordField);
@@ -87,9 +93,10 @@ public class Controller {
                userPasAnime.playAnime();
            }
     }
-    public void openNewScene(String window){
-        loginUpButton.getScene().getWindow().hide();
 
+    public void openNewScene(String window){
+        singInButton.getScene().getWindow().hide();
+        loginUpButton.getScene().getWindow().hide();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource(window));
         try {
@@ -97,7 +104,6 @@ public class Controller {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         Parent root = loader.getRoot();
         Stage stage = new Stage();
         stage.setScene(new Scene(root));

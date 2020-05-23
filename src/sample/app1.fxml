@@ -56,7 +56,7 @@
                   <Image url="@image/soda.jpeg" />
                </image>
             </ImageView>
-            <Button fx:id="administrationButton" layoutX="646.0" layoutY="366.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="226.0" style="-fx-background-color: #f39c63;" text="write to the administration" textFill="WHITE">
+            <Button layoutX="646.0" layoutY="366.0" mnemonicParsing="false" onAction="#administrationButton" prefHeight="45.0" prefWidth="226.0" style="-fx-background-color: #f39c63;" text="write to the administration" textFill="WHITE">
                <font>
                   <Font name="Forte" size="18.0" />
                </font>
@@ -71,17 +71,17 @@
                   <Image url="@image/stayAtHome.jpeg" />
                </image>
             </ImageView>
-            <Button fx:id="buttonBread" layoutX="95.0" layoutY="33.0" mnemonicParsing="false" opacity="0.0" prefHeight="113.0" prefWidth="113.0" text="ButtonMilk" />
-            <Button fx:id="buttonMeat" layoutX="280.0" layoutY="30.0" mnemonicParsing="false" opacity="0.0" prefHeight="120.0" prefWidth="114.0" text="Button" />
-            <Button fx:id="buttonFlour" layoutX="457.0" layoutY="33.0" mnemonicParsing="false" opacity="0.0" prefHeight="114.0" prefWidth="114.0" text="Button" />
-            <Button fx:id="buttonCandy" layoutX="279.0" layoutY="195.0" mnemonicParsing="false" opacity="0.0" prefHeight="120.0" prefWidth="114.0" text="Button" />
-            <Button fx:id="buttonCanned" layoutX="457.0" layoutY="195.0" mnemonicParsing="false" opacity="0.0" prefHeight="120.0" prefWidth="114.0" text="Button" />
-            <Button fx:id="buttonSale" layoutX="457.0" layoutY="330.0" mnemonicParsing="false" opacity="0.0" prefHeight="120.0" prefWidth="114.0" text="Button" />
-            <Button fx:id="buttonVegetable" layoutX="279.0" layoutY="326.0" mnemonicParsing="false" opacity="0.0" prefHeight="120.0" prefWidth="114.0" text="Button" />
-            <Button fx:id="buttonSoda" layoutX="94.0" layoutY="330.0" mnemonicParsing="false" opacity="0.0" prefHeight="120.0" prefWidth="114.0" text="Button" />
-            <Button fx:id="buttonMilk" layoutX="95.0" layoutY="195.0" mnemonicParsing="false" opacity="0.0" prefHeight="120.0" prefWidth="114.0" text="Button" />
-            <Button fx:id="buttonStayAtHome" layoutX="665.0" layoutY="130.0" mnemonicParsing="false" opacity="0.0" prefHeight="174.0" prefWidth="174.0" text="Button" />
-            <Button fx:id="lustButButton" layoutX="675.0" layoutY="30.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="154.0" style="-fx-background-color: #f39c63;" text="buy and list" textFill="WHITE">
+            <Button layoutX="95.0" layoutY="33.0" mnemonicParsing="false" onAction="#buttonBread" opacity="0.0" prefHeight="113.0" prefWidth="113.0" text="Button" />
+            <Button layoutX="280.0" layoutY="30.0" mnemonicParsing="false" onAction="#buttonMeat" opacity="0.0" prefHeight="120.0" prefWidth="114.0" text="Button" />
+            <Button layoutX="457.0" layoutY="33.0" mnemonicParsing="false" onAction="#buttonFlour" opacity="0.0" prefHeight="114.0" prefWidth="114.0" text="Button" />
+            <Button layoutX="279.0" layoutY="195.0" mnemonicParsing="false" onAction="#buttonCandy" opacity="0.0" prefHeight="120.0" prefWidth="114.0" text="Button" />
+            <Button layoutX="457.0" layoutY="195.0" mnemonicParsing="false" onAction="#buttonCanned" opacity="0.0" prefHeight="120.0" prefWidth="114.0" text="Button" />
+            <Button layoutX="457.0" layoutY="330.0" mnemonicParsing="false" onAction="#buttonSale" opacity="0.0" prefHeight="120.0" prefWidth="114.0" text="Button" />
+            <Button layoutX="279.0" layoutY="326.0" mnemonicParsing="false" onAction="#buttonVegetable" opacity="0.0" prefHeight="120.0" prefWidth="114.0" text="Button" />
+            <Button layoutX="94.0" layoutY="330.0" mnemonicParsing="false" onAction="#buttonSoda" opacity="0.0" prefHeight="120.0" prefWidth="114.0" text="Button" />
+            <Button layoutX="95.0" layoutY="195.0" mnemonicParsing="false" onAction="#buttonMilk" opacity="0.0" prefHeight="120.0" prefWidth="114.0" text="Button" />
+            <Button layoutX="665.0" layoutY="130.0" mnemonicParsing="false" onAction="#buttonStayAtHome" opacity="0.0" prefHeight="174.0" prefWidth="174.0" text="Button" />
+            <Button layoutX="675.0" layoutY="30.0" mnemonicParsing="false" onAction="#lustButButton" prefHeight="39.0" prefWidth="154.0" style="-fx-background-color: #f39c63;" text="buy and list" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
@@ -98,5 +98,10 @@
             <Image url="@image/vilka.jpeg" />
          </image>
       </ImageView>
+      <Button layoutX="41.0" layoutY="39.0" mnemonicParsing="false" onAction="#meetButton" prefHeight="54.0" prefWidth="121.0" style="-fx-background-color: #f39c63;" text="Meet us !!!" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="18.0" />
+         </font>
+      </Button>
     </children>
 </AnchorPane>

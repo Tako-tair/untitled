@@ -26,14 +26,14 @@
                   <Font name="Forte" size="58.0" />
                </font>
             </Label>
-            <Button fx:id="singInButton" layoutX="385.0" layoutY="347.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="163.0" style="-fx-background-color: #f39c63;" text="sing in" textAlignment="CENTER" textFill="WHITE">
+            <Button fx:id="singInButton" layoutX="385.0" layoutY="347.0" mnemonicParsing="false" onAction="#singInButton" prefHeight="54.0" prefWidth="163.0" style="-fx-background-color: #f39c63;" text="sing in" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Forte" size="38.0" />
                </font>
             </Button>
          </children>
       </AnchorPane>
-      <Button fx:id="loginUpButton" layoutX="722.0" layoutY="29.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #f39c63;" text="sing up" textAlignment="CENTER" textFill="WHITE">
+      <Button fx:id="loginUpButton" layoutX="720.0" layoutY="24.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #f39c63;" text="sing up" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Forte" size="27.0" />
          </font>

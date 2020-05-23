@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -13,6 +14,9 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import sample.Animation.Shake;
+
+import javax.xml.crypto.Data;
 
 public class MenuList {
   Calculator calculator =new Calculator();
@@ -50,54 +54,48 @@ public class MenuList {
     private Button endButton;
 
     @FXML
-    private Button backButton;
-
-    public static ArrayList<Order> s;
-    public void ddd(ArrayList<Order> a){
-        System.out.println( a);
-        this.s=a;
+    void backButton(javafx.event.ActionEvent actionEvent) throws IOException {
+        Parent SignIn = FXMLLoader.load(getClass().getResource("/sample/app1.fxml"));
+        Scene scene2 = new Scene(SignIn);
+        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene2);
+        window.show();
     }
-
     @FXML
     void initialize() {
-
-        listButton.setOnAction(actionEvent -> {
-                PackageData pd = new PackageData("LIST");
-                Main.connect(pd);
-            });
-
-
-            totalMoneylabel.setText(String.valueOf(s));
-
+        totalMoneylabel.setText(String.valueOf("Total money: "+calculator.getMoney()));
 
         endButton.setOnAction(actionEvent -> {
-            try {
-                Thread.sleep(2000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+            if(!cardText.getText().equals("") && !cvsText.getText().equals("") && cardText.getText().length()==16 && cvsText.getText().length()==3) {
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+                messageLabel.setText(" Your order is processed and will be delivered within 1 HOUR, total money - " + String.valueOf(calculator.getMoney()) + " Thank you for shopping)");
+                cardText.clear();
+                cvsText.clear();
+            }else{
+                Shake shake = new Shake(cardText);
+                Shake shake1 = new Shake(cvsText);
+                shake.playAnime();
+                shake1.playAnime();
+                cardText.setText("Write 16 number");
+                cvsText.setText("Write 3 number");
+                messageLabel.setText("Please fill in the ABOVE mentioned objects");
             }
-            messageLabel.setText("Thank you for your purchase, all products will be delivered to you in 1 hour)");
         });
 
-        backButton.setOnAction(actionEvent -> {
-            openNewScene("/sample/app1.fxml");
+        listButton.setOnAction(actionEvent -> {
+            listText.setText(calculator.getInfo());
         });
-    }
-    public void openNewScene(String window){
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource(window));
-        try {
-            loader.load();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
-        Parent root = loader.getRoot();
-        Stage stage = new Stage();
-        stage.setScene(new Scene(root));
-        stage.showAndWait();
-        stage.getScene().getWindow().hide();
-        stage.hide();
+        removeButton.setOnAction(actionEvent -> {
+           listText.setText(calculator.getRemove(removeText.getText()));
+           totalMoneylabel.setText(calculator.geRemove(removeText.getText()));
+           removeText.clear();
+        });
     }
 }
 

@@ -10,7 +10,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.singUpController">
     <children>
-        <AnchorPane layoutY="119.0" prefHeight="476.0" prefWidth="900.0" style="-fx-background-color: #fafafa;">
+        <AnchorPane layoutY="124.0" prefHeight="476.0" prefWidth="900.0" style="-fx-background-color: #fafafa;">
             <children>
                 <TextField fx:id="loginField" layoutX="21.0" layoutY="79.0" prefHeight="34.0" prefWidth="319.0" promptText="login" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
                     <font>
@@ -62,7 +62,7 @@
                   <Font name="Monotype Corsiva" size="22.0" />
                </font>
             </CheckBox>
-            <Button fx:id="buttonBack" layoutX="506.0" layoutY="389.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="136.0" style="-fx-background-color: #f39c63;" text="back" textFill="WHITE">
+            <Button layoutX="506.0" layoutY="389.0" mnemonicParsing="false" onAction="#buttonBack" prefHeight="55.0" prefWidth="136.0" style="-fx-background-color: #f39c63;" text="back" textFill="WHITE">
                <font>
                   <Font name="Forte" size="30.0" />
                </font>

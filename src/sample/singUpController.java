@@ -4,6 +4,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import com.sun.javafx.scene.traversal.TopMostTraversalEngine;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
@@ -51,19 +52,12 @@ public class singUpController {
     @FXML
     private TextField singUpPhoneNumber;
 
-    @FXML
-    private Button buttonBack;
-
 
 
     @FXML
     void initialize() {
         singInButton.setOnAction(actionEvent -> {
             singUpNewUser();
-        });
-
-        buttonBack.setOnAction(actionEvent -> {
-            openNewScene("/sample/sample.fxml");
         });
     }
 
@@ -86,8 +80,6 @@ public class singUpController {
     }
 
     public void openNewScene(String window){
-        buttonBack.getScene().getWindow().hide();
-
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource(window));
         try {
@@ -100,5 +92,13 @@ public class singUpController {
         Stage stage = new Stage();
         stage.setScene(new Scene(root));
         stage.show();
+    }
+
+    public void buttonBack(ActionEvent actionEvent) throws IOException {
+        Parent SignIn = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Scene scene2 = new Scene(SignIn);
+        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene2);
+        window.show();
     }
 }

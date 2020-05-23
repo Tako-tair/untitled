@@ -48,7 +48,7 @@
                   <Image url="@image/bread16.jpeg" />
                </image>
             </ImageView>
-            <Button fx:id="backButton" layoutX="750.0" layoutY="396.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="95.0" style="-fx-background-color: #f39c63;" text="Back" textFill="WHITE">
+            <Button layoutX="750.0" layoutY="396.0" mnemonicParsing="false" onAction="#backButton" prefHeight="38.0" prefWidth="95.0" style="-fx-background-color: #f39c63;" text="Back" textFill="WHITE">
                <font>
                   <Font name="Forte" size="20.0" />
                </font>
@@ -119,7 +119,7 @@
             <Button fx:id="bread4BuyButton" layoutX="166.0" layoutY="272.0" mnemonicParsing="false" text="Buy" />
             <Button fx:id="bread5BuyButton" layoutX="385.0" layoutY="272.0" mnemonicParsing="false" text="Buy" />
             <Button fx:id="bread6BuyButton" layoutX="595.0" layoutY="272.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="36.0" text="Buy" />
-            <Label fx:id="listLabel" alignment="TOP_LEFT" contentDisplay="TOP" disable="true" layoutX="659.0" layoutY="76.0" prefHeight="300.0" prefWidth="226.0" text="basket" underline="true" wrapText="true" />
+            <Label fx:id="listLabel" alignment="TOP_LEFT" contentDisplay="TOP" disable="true" layoutX="635.0" layoutY="76.0" prefHeight="300.0" prefWidth="261.0" text="basket" underline="true" wrapText="true" />
             <TextField fx:id="bread1Text" layoutX="59.0" layoutY="171.0" prefHeight="26.0" prefWidth="110.0" promptText="how many Bread?" />
             <TextField fx:id="bread2Text" layoutX="268.0" layoutY="171.0" promptText="how many Bread?" />
             <TextField fx:id="bread3Text" layoutX="468.0" layoutY="171.0" promptText="how many Bread?" />

@@ -1,11 +1,16 @@
 package sample;
+    import java.io.BufferedReader;
+    import java.io.BufferedWriter;
+    import java.io.FileReader;
+    import java.io.FileWriter;
     import java.sql.Connection;
     import java.sql.DriverManager;
     import java.sql.PreparedStatement;
     import java.sql.SQLException;
     import java.sql.ResultSet;
+    import java.util.ArrayList;
 
-        public class DataBaseHandler extends  Configs {
+public class DataBaseHandler extends  Configs {
             Connection dbConnection;
 
             public Connection getDbConnection() throws ClassNotFoundException, SQLException {
@@ -38,20 +43,20 @@ package sample;
                     e.printStackTrace();
                 }
             }
+            public  static  User user = new User();
             public ResultSet getUser(User user){
                 ResultSet resultSet = null;
-                String select = "SELECT * FROM " + Const.USER_TABLE + " WHERE " + Const.USER_NAME + "=? AND " + Const.USER_PASSWORD + "=?";
-
+                String select = "SELECT * FROM " + Const.USER_TABLE + " WHERE " + Const.USER_NAME + "=? AND " + Const.USER_PASSWORD +"=?";
                 try {
                     PreparedStatement PrSt = getDbConnection().prepareStatement(select);
                     PrSt.setString(1, user.getLogin());
                     PrSt.setString(2, user.getPassword());
-
+                    user.setLogin(user.getLogin());
+                    user.setPassword(user.getPassword());
                     resultSet = PrSt.executeQuery();
                 } catch (SQLException | ClassNotFoundException e) {
                     e.printStackTrace();
                 }
                 return resultSet;
             }
-
 }
